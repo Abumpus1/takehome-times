@@ -1,0 +1,6 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black 2px;
+  justify-content: center;
+}
