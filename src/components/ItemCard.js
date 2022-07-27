@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/ItemCard.css";
 
-const ItemCard = () => {
+const ItemCard = ({ title }) => {
   return (
     <article className="item-card">
       <div className="thumbnail">
         <p>IMAGE IMAGE IMAGE IMAGE</p>
       </div>
       <div className="card-info">
-        <h3>Title explaining this article</h3>
+        <h3>{title}</h3>
         <p>2022-07-27</p>
       </div>
     </article>

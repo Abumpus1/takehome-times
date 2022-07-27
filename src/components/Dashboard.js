@@ -2,18 +2,22 @@ import React from "react";
 import ItemCard from "./ItemCard";
 import "../styles/Dashboard.css";
 
-const Dashboard = () => {
+const Dashboard = ({ stories }) => {
+
+  const storyCards = () => {
+    return stories.map((story, index) => {
+      return (
+        <ItemCard
+          key={`${new Date().getTime()}${index}`}
+          title={story.title}
+        />
+      )
+    })
+  }
+
   return (
     <section className="dashboard">
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      
+      {storyCards()}
     </section>
   )
 }

@@ -1,4 +1,5 @@
 .dashboard {
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   border: solid black 2px;

@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     getTopStories().then(data => {
       console.log(data);
-      setStories(data.results)
+      setStories(data.results);
     })
     .catch(err => console.log(err));
   },[]);
@@ -19,7 +19,11 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
-      <Dashboard />
+      {stories.length ? (
+        <Dashboard stories={stories} /> 
+      ) : (
+        <h1>Loading...</h1>
+      )}
     </div>
   );
 }
