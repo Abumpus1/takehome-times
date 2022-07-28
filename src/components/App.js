@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { getTopStories } from '../apiCalls';
 import '../styles/App.css';
 import Dashboard from './Dashboard';
+import DetailedView from './DetailedView';
 import Nav from './Nav';
 
 const App = () => {
@@ -12,7 +14,7 @@ const App = () => {
     return storyData.map(story => {
       story.id = story.short_url.split("ms/")[1];
       return story;
-    })
+    });
   }
 
   useEffect(() => {
@@ -24,14 +26,20 @@ const App = () => {
   },[]);
 
   return (
-    <div className="App">
+    <main className="App">
       <Nav />
-      {stories.length ? (
-        <Dashboard stories={stories} /> 
-      ) : (
-        <h2>Loading...</h2>
-      )}
-    </div>
+      <Routes>
+        <Route exact path="/" element={
+          stories.length ? (
+            <Dashboard stories={stories} /> 
+          ) : (
+            <h2>Loading...</h2>
+          )
+        } />
+        <Route path="/details/:id" element={<DetailedView />} />
+        <Route path="*" element={<h2>Error 404, Not found</h2>} />
+      </Routes>
+    </main>
   );
 }
 

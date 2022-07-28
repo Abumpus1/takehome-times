@@ -9,5 +9,10 @@ nav {
 
 h1 {
   font-size: 50px;
+  color: black;
   margin: 0;
+}
+
+.home-link {
+  text-decoration: none;
 }
