@@ -3,11 +3,13 @@ nav {
   justify-content: center;
   align-items: center;
   border-bottom: solid black 2px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 95vw;
   height: 100px;
 }
 
 h1 {
+  font-family: 'Fondamento', cursive;
   font-size: 50px;
   color: black;
   margin: 0;
@@ -15,4 +17,10 @@ h1 {
 
 .home-link {
   text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 40px;
+  }
 }

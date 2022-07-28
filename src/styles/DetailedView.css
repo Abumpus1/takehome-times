@@ -1,0 +1,60 @@
+.story-title {
+  padding: 10px;
+  border-bottom: solid lightgrey 1px;
+}
+
+.story-info-box {
+ display: flex;
+ max-width: 1200px;
+ justify-content: center;
+}
+
+.date-info-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-large {
+  max-height: 350px;
+  width: 50%;
+}
+
+.abstract-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.abstract,
+.nyt-link {
+  font-size: 25px;
+}
+
+.date,
+.byline {
+  font-size: 18px;
+}
+
+@media screen and (max-width:950px) {
+  .story-info-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .date-info-box {
+    flex-direction: column-reverse;
+  }
+
+  .date,
+  .byline {
+    margin: 5px;
+  }
+
+  .img-large {
+    width: 70%;
+  }
+}

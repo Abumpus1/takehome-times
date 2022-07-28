@@ -9,6 +9,7 @@ import Nav from './Nav';
 const App = () => {
 
   const [stories, setStories] = useState([]);
+  const [error, setError] = useState("")
 
   const generateStoryIDs = (storyData) => {
     return storyData.map(story => {
@@ -22,8 +23,15 @@ const App = () => {
       console.log(data);
       setStories(generateStoryIDs(data.results));
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+      console.log(err);
+      setError(err);
+    });
   },[]);
+
+  if (error) {
+    return <h2>Error, {error}</h2>
+  }
 
   return (
     <main className="App">
@@ -36,7 +44,13 @@ const App = () => {
             <h2>Loading...</h2>
           )
         } />
-        <Route path="/details/:id" element={<DetailedView />} />
+        <Route path="/details/:id" element={
+          stories.length ? (
+            <DetailedView stories={stories} />
+          ) : (
+            <h2>Loading...</h2>
+          )
+        } />
         <Route path="*" element={<h2>Error 404, Not found</h2>} />
       </Routes>
     </main>

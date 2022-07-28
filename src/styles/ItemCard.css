@@ -30,3 +30,15 @@
   font-size: 24px;
   color: black;
 }
+
+@media screen and (max-width:600px) {
+  .item-card {
+    flex-direction: column;
+    width: 300px;
+    height: 35vh;
+  }
+
+  .card-info > h3 {
+    font-size: 20px;
+  }
+}
