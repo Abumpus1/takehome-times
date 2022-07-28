@@ -20,7 +20,6 @@ const App = () => {
 
   useEffect(() => {
     getTopStories().then(data => {
-      console.log(data);
       setStories(generateStoryIDs(data.results));
     })
     .catch(err => {
