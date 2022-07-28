@@ -1,0 +1,39 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.search-box > label {
+  margin: 0 15px;
+  font-size: 40px;
+}
+
+.search-box > input {
+  border: solid grey 2px;
+  text-indent: 10px;
+  border-radius: 50px;
+  margin: 0 15px;
+  height: 40px;
+  font-size: 20px;
+  width: 40%;
+}
+
+@media screen and (max-width:650px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box > label {
+    font-size: 30px;
+  }
+
+  .search-box > input {
+    text-indent: 0;
+    text-align: center;
+    height: 30px;
+    width: 50%;
+  }
+}

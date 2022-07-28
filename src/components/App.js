@@ -5,6 +5,7 @@ import '../styles/App.css';
 import Dashboard from './Dashboard';
 import DetailedView from './DetailedView';
 import Nav from './Nav';
+import Search from './Search';
 
 const App = () => {
 
@@ -39,7 +40,10 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={
           stories.length ? (
-            <Dashboard stories={stories} /> 
+            <>
+              <Search />
+              <Dashboard stories={stories} /> 
+            </>
           ) : (
             <h2>Loading...</h2>
           )
