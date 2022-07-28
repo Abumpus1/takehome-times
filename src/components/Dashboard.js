@@ -5,10 +5,11 @@ import "../styles/Dashboard.css";
 const Dashboard = ({ stories }) => {
 
   const storyCards = () => {
-    return stories.map((story, index) => {
+    return stories.map(story => {
       return (
         <ItemCard
-          key={`${new Date().getTime()}${index}`}
+          key={story.id}
+          id={story.id}
           title={story.title}
           multimedia={story.multimedia}
         />

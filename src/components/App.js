@@ -8,10 +8,17 @@ const App = () => {
 
   const [stories, setStories] = useState([]);
 
+  const generateStoryIDs = (storyData) => {
+    return storyData.map(story => {
+      story.id = story.short_url.split("ms/")[1];
+      return story;
+    })
+  }
+
   useEffect(() => {
     getTopStories().then(data => {
       console.log(data);
-      setStories(data.results);
+      setStories(generateStoryIDs(data.results));
     })
     .catch(err => console.log(err));
   },[]);
