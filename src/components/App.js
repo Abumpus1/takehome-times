@@ -22,7 +22,7 @@ const App = () => {
       {stories.length ? (
         <Dashboard stories={stories} /> 
       ) : (
-        <h1>Loading...</h1>
+        <h2>Loading...</h2>
       )}
     </div>
   );

@@ -10,6 +10,7 @@ const Dashboard = ({ stories }) => {
         <ItemCard
           key={`${new Date().getTime()}${index}`}
           title={story.title}
+          multimedia={story.multimedia}
         />
       )
     })

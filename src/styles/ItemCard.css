@@ -11,22 +11,18 @@
 }
 
 .thumbnail {
-  border: solid black 1px;
-  width: 100px;
-  max-height: 100px;
+  width: 120px;
+  max-height: 120px;
 }
 
 .card-info {
-  max-width: 330px;
+  max-width: 320px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .card-info > h3 {
-  margin: 8px;
-}
-.card-info > p {
-  margin: 5px;
+  margin: 0;
+  font-size: 24px;
 }
