@@ -10,6 +10,10 @@ const DetailedView = ({ stories }) => {
     return storyData.created_date.split("T")[0].split("-").join("/")
   }
 
+  if(!storyData) {
+    return <h2>Error 404, Not found</h2>
+  }
+
   return (
     <section className="detailed-view">
       <h2 className="story-title">{storyData.title}</h2>
