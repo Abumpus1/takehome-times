@@ -28,7 +28,7 @@ const Dashboard = ({ stories }) => {
     <>
       <Search getInput={getInput} />
       <section className="dashboard">
-        {storyCards()}
+        {filteredItems.length ? storyCards() : <h2>No results found! Please adjust your search.</h2>}
       </section>
     </>
   )
