@@ -1,66 +1,68 @@
-[
-  {
-    "section": "business",
-    "subsection": "",
-    "title": "What Fed Rate Increases Mean for Mortgages, Credit Cards and More",
-    "abstract": "Savers will benefit and borrowers can expect to pay more on credit cards, student loans and other forms of debt.",
-    "url": "https://www.nytimes.com/2022/07/27/business/fed-rate-mortgage-credit-card.html",
-    "byline": "By Tara Siegel Bernard",
-    "item_type": "Article",
-    "created_date": "2022-07-27T11:30:38-04:00",
-    "multimedia": null,
-    "short_url": "https://nyti.ms/3zLC9MR"
-  },
-  {
-    "section": "business",
-    "subsection": "",
-    "title": "What companies are saying about inflation and recession risks.",
-    "abstract": "",
-    "url": "https://www.nytimes.com/live/2022/07/27/business/fed-interest-rates/what-companies-are-saying-about-inflation-and-recession-risks",
-    "byline": "By Isabella Simonetti",
-    "item_type": "Article",
-    "created_date": "2022-07-27T13:15:02-04:00",
-    "multimedia": null,
-    "short_url": "https://nyti.ms/3Ozz0Ud"
-  },
-  {
-    "section": "world",
-    "subsection": "europe",
-    "title": "Germany Counts on Chilled Gas to Keep Warm Over Winter",
-    "abstract": "As Russia squeezes the flow of natural gas, German officials are urgently turning toward an option they had earlier disregarded: liquefied natural gas.",
-    "url": "https://www.nytimes.com/2022/07/27/world/europe/germany-lng-energy-gas.html",
-    "byline": "By Melissa Eddy, Stanley Reed and Patrick Junker",
-    "item_type": "Article",
-    "created_date": "2022-07-27T05:00:30-04:00",
-    "multimedia": [
-      {
-        "url": "https://static01.nyt.com/images/2022/07/26/business/00germany-lng2/merlin_210082122_03e50782-bbf6-4e28-af81-7a6584864bce-superJumbo.jpg",
-        "format": "Super Jumbo",
-        "height": 1366,
-        "width": 2048,
-        "type": "image",
-        "subtype": "photo",
-        "caption": "A port station for shipments of liquefied natural gas is under construction in Wilhelmshaven, Germany."
-      },
-      {
-        "url": "https://static01.nyt.com/images/2022/07/26/business/00germany-lng2/00germany-lng2-threeByTwoSmallAt2X.jpg",
-        "format": "threeByTwoSmallAt2X",
-        "height": 400,
-        "width": 600,
-        "type": "image",
-        "subtype": "photo",
-        "caption": "A port station for shipments of liquefied natural gas is under construction in Wilhelmshaven, Germany."
-      },
-      {
-        "url": "https://static01.nyt.com/images/2022/07/26/business/00germany-lng2/00germany-lng2-thumbLarge.jpg",
-        "format": "Large Thumbnail",
-        "height": 150,
-        "width": 150,
-        "type": "image",
-        "subtype": "photo",
-        "caption": "A port station for shipments of liquefied natural gas is under construction in Wilhelmshaven, Germany."
-      }
-    ],
-    "short_url": "https://nyti.ms/3PVsecD"
-  }
+{
+  "results": [
+    {
+      "section": "business",
+      "subsection": "",
+      "title": "What Fed Rate Increases Mean for Mortgages, Credit Cards and More",
+      "abstract": "Savers will benefit and borrowers can expect to pay more on credit cards, student loans and other forms of debt.",
+      "url": "https://www.nytimes.com/2022/07/27/business/fed-rate-mortgage-credit-card.html",
+      "byline": "By Tara Siegel Bernard",
+      "item_type": "Article",
+      "created_date": "2022-07-27T11:30:38-04:00",
+      "multimedia": null,
+      "short_url": "https://nyti.ms/3zLC9MR"
+    },
+    {
+      "section": "business",
+      "subsection": "",
+      "title": "What companies are saying about inflation and recession risks.",
+      "abstract": "",
+      "url": "https://www.nytimes.com/live/2022/07/27/business/fed-interest-rates/what-companies-are-saying-about-inflation-and-recession-risks",
+      "byline": "By Isabella Simonetti",
+      "item_type": "Article",
+      "created_date": "2022-07-27T13:15:02-04:00",
+      "multimedia": null,
+      "short_url": "https://nyti.ms/3Ozz0Ud"
+    },
+    {
+      "section": "world",
+      "subsection": "europe",
+      "title": "Germany Counts on Chilled Gas to Keep Warm Over Winter",
+      "abstract": "As Russia squeezes the flow of natural gas, German officials are urgently turning toward an option they had earlier disregarded: liquefied natural gas.",
+      "url": "https://www.nytimes.com/2022/07/27/world/europe/germany-lng-energy-gas.html",
+      "byline": "By Melissa Eddy, Stanley Reed and Patrick Junker",
+      "item_type": "Article",
+      "created_date": "2022-07-27T05:00:30-04:00",
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/07/26/business/00germany-lng2/merlin_210082122_03e50782-bbf6-4e28-af81-7a6584864bce-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A port station for shipments of liquefied natural gas is under construction in Wilhelmshaven, Germany."
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/07/26/business/00germany-lng2/00germany-lng2-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A port station for shipments of liquefied natural gas is under construction in Wilhelmshaven, Germany."
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/07/26/business/00germany-lng2/00germany-lng2-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A port station for shipments of liquefied natural gas is under construction in Wilhelmshaven, Germany."
+        }
+      ],
+      "short_url": "https://nyti.ms/3PVsecD"
+    }
 ]
+}
