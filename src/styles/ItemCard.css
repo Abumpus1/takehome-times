@@ -1,0 +1,32 @@
+.item-card {
+  text-decoration: none;
+  margin: 20px 30px;
+  display: flex;
+  border-bottom: solid grey 1px;
+  border-right: solid grey 1px;
+  box-shadow: lightgrey 2px 2px 5px;
+  border-radius: 5px;
+  width: 460px;
+  height: 130px;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 120px;
+  max-height: 120px;
+}
+
+.card-info {
+  max-width: 320px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info > h3 {
+  margin: 0;
+  font-size: 24px;
+  color: black;
+}
