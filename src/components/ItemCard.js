@@ -5,9 +5,9 @@ import "../styles/ItemCard.css";
 const ItemCard = ({ title, multimedia, id }) => {
   return (
     <Link className="item-card" to={`/details/${id}`}>
-      <img className="thumbnail" src={multimedia ? multimedia[2].url : require("../assets/defaultThumbnail.png")} />
+      <img className="thumbnail" src={multimedia ? multimedia[2].url : require("../assets/defaultThumbnail.png")} alt={multimedia ? multimedia[0].caption : "No caption given"} />
       <div className="card-info">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
       </div>
     </Link>
   )

@@ -25,7 +25,7 @@
   flex-direction: column;
 }
 
-.card-info > h3 {
+.card-info > h2 {
   margin: 0;
   font-size: 24px;
   color: black;
@@ -38,7 +38,7 @@
     height: 35vh;
   }
 
-  .card-info > h3 {
+  .card-info > h2 {
     font-size: 20px;
   }
 }
