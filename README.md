@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# The Takehome Times
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Getting Started
+#### To run this app locally:
 
-## Available Scripts
+1. Clone down this repo
 
-In the project directory, you can run:
+2. Cd into the directory from your terminal and install the project dependencies:
+    - Run `npm install` or `npm i` in the terminal
 
-### `npm start`
+3. To load the web app:
+    - Run `npm start` in the terminal
+    - go to `http://localhost:3000` to interact with the app
+    - Press `ctrl + c` to shutdown the server
+---
+### E2E Testing via Cypress
+#### To run the testing suite:
+- Make sure to have the web app running locally
+- Run `npm run cypress` in the terminal
+- Navigate to E2E testing with chrome
+- Click on the test specs you wish to run
+---
+### Table of Contents
+- [About the Project](#about-the-project)
+- [Technologies Used](#technologies-used)
+- [App demo](#see-the-app-in-action)
+- [Lighthouse scores](#lighthouse-accessibility)
+- [Wire Frames](#wireframes-via-figma)
+- [Reflections](#reflections)
+---
+#### About the Project
+**The Takehome Times** will display the top stories fetched from the New York Times [Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview) and display them to the user. The user can filter through the top stories. Clicking on an article will route to a detail page, giving more information on the article, as well as a link to read the full article on the nytimes website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+#### Contributors
+ - [Alex Bumpus](https://github.com/Abumpus1)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Technologies Used
+- React
+- Javascript
+- HTML
+- CSS
+- React Router
+- Cypress 
+- Fetch API
+- [nytimes Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview)
+---
+## See the app in action
 
-### `npm test`
+### **_Dashboard_**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Visiting the app, the user will be able to see a list of recent news articles and filter through them.
 
-### `npm run build`
+![Dashboard-times](https://user-images.githubusercontent.com/3982238/181594324-f7d53745-51fe-4be8-9bb3-f16ff1f407df.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **_Details Page_**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clicking on an article will navigate to a page displaying additional details about the article, and a link nagivating to the full article.
 
-### `npm run eject`
+![Details-times](https://user-images.githubusercontent.com/3982238/181594435-34077d51-461a-460b-8775-24eb4f62a069.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Lighthouse accessibility
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screen Shot 2022-07-28 at 6 20 49 PM](https://user-images.githubusercontent.com/3982238/181687366-7c753b6b-0ba2-4c31-93c5-8ef5c6fd0a73.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+## Basic Wireframes via Figma
 
-## Learn More
+<img width="838" alt="Screen Shot 2022-07-28 at 10 55 39 AM" src="https://user-images.githubusercontent.com/3982238/181594876-64f1be2b-1ecc-4931-b34a-3ff7fe578d41.png">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img width="842" alt="Screen Shot 2022-07-28 at 10 55 51 AM" src="https://user-images.githubusercontent.com/3982238/181594922-731730eb-19f3-4427-95b1-dbd0053232f7.png">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Reflections
+- Going into this project, I didn't realize that I would not be getting full articles from the API, and instead only a snippet and a link to the full article, so it was interesting to decide how to best lay everything out. 
+- I had initially considered fetching from multiple category endpoints and allowing the user to sort by category, however I decided the safer route was to start with just the top stories endpoint for MVP, which turned out to be the right choice for me given the time frame.
